@@ -1,10 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Jumbotron from '../src/components/Jumbotron/JumboTron'
 
 function App() {
   return (
     <div className="App">
+      <Jumbotron />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

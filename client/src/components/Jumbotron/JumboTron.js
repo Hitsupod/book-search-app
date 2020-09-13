@@ -1,14 +1,17 @@
-import React from "react";
+import React from 'react';
+import { Jumbotron, Container } from 'reactstrap';
 
-function Jumbotron({ children }) {
+const jumbotron = (props) => {
   return (
-    <div
-      style={{ height: 300, clear: "both", paddingTop: 120, textAlign: "center" }}
-      className="jumbotron"
-    >
-      {children}
+    <div>
+      <Jumbotron fluid>
+        <Container fluid>
+          <h1 className="display-3">Book Search</h1>
+          <p className="lead">Search a Book Title </p>
+        </Container>
+      </Jumbotron>
     </div>
   );
-}
+};
 
-export default Jumbotron;
+export default jumbotron;
