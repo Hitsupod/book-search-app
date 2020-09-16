@@ -12,6 +12,9 @@ Add the following Express routes for your app:
 const path = require("path");
 const router = require("express").Router();
 const apiRoutes = require("./api");
+const axios = require("axios");
+const db = require("../models");
+
 
 // API Routes
 router.use("/api", apiRoutes);
